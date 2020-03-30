@@ -1,0 +1,5 @@
+n1=int(input("enter a number"))
+i=n1-10;
+while(n1>i):
+    print(n1)
+    n1-=1
