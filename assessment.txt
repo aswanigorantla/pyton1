@@ -1,0 +1,139 @@
+Q1):Create a function generateNumbers(num) that takes in a positive number as argument and returns a list of number from 0 to that number 
+inclusive. Note: The function range(5) will return a list of number [0, 1, 2, 3, 4].
+
+
+def generatenumbers(num):
+    for x in range(num):
+        print(x);
+    
+y=int(input("enter a number"))
+generatenumbers(y);
+
+Q2):Create a function generateNumbers(start, end) that takes in two numbers as arguments and returns a list of numbers starting from
+ start to the end number (inclusive) specified in the arguments. Note: The function range(x, y) can takes in 2 arguments. 
+For example, range(1, 5) will return a list of numbers [1,2,3,4].
+
+
+def generatenumbers(start,end):
+    for x in range(start,end):
+        print(x);
+    
+y=int(input("enter first number"))
+z=int(input("enter second number"))
+generatenumbers(y,z);
+
+
+Q3):Create a function generateNumbers(start, end, step) that takes in three numbers as arguments and returns a list of numbers
+ ranging from start to the end number (inclusive)and skipping numbers based on the step specified in the arguments
+
+
+def generatenumbers(start,end,step):
+    for x in range(start,end,step):
+        print(x);
+    
+y=int(input("enter first number"))
+z=int(input("enter second number"))
+k=int(input("enter step number"))
+generatenumbers(y,z,k);
+
+
+Q4):Create a function addNumbers(num) that takes in a positive number as argument and returns the sum of all the number 
+between 0 and that number (inclusive).
+
+def addnumbers(num):
+    y=0;
+    for x in range(num+1):
+        y=x+y;
+    print(y);
+    
+z=int(input("Enter positive number"))
+addnumbers(z);
+
+Q5):Create a function addNumbers(start, end) that takes in two positive numbers as arguments and returns the sum of all the 
+number between the start and end number (inclusive).
+
+def addnumbers(start,end):
+    y=0;
+    for x in range(start,end+1):
+        y=x+y;
+    print(y);
+    
+z=int(input("Enter starting number"))
+k=int(input("Enter ending number"))
+addnumbers(z,k);
+
+
+Q6):Create a function addEvenNumbers(start, end) that takes in two positive numbers as arguments and returns the sum of all 
+the even numbers between the start and end number (inclusive). Note: x % 2 returns 0 if x is an even number.
+
+
+def addnumbers(start,end):
+    y=0;
+    for x in range(start,end+1):
+        if(x%2==0):
+            y=x+y;
+    print(y);
+    
+z=int(input("Enter starting number"))
+k=int(input("Enter ending number"))
+addnumbers(z,k);
+
+
+Q7):Making use of the 'continue' statement to skip the rest of execution within a loop block for current iteration, and move
+ to the next iteration.
+
+i=0;
+while(i<10):
+    i+=1;
+    if(i==5):
+        continue
+    print(i);
+
+Q8):Making use of the 'break' statement to abort a for/while loop, and move to the code after the loop block .
+
+i=0;
+while(i<10):
+    i+=1;
+    if(i==5):
+        break;
+    print(i);
+
+
+Q9):Create a function genSet() that takes in a list of numbers and returns a sorted set.
+
+
+def genset(nums):
+    nums.sort();
+    print(nums);
+
+a=int(input("enter a number"))
+b=int(input("enter a number"))
+c=int(input("enter a number"))
+d=int(input("enter a number"))
+nums=[a,b,c,d];
+genset(nums);
+
+
+
+Q11):Write a function sumOfDigit(number) that takes in a number as argument and returns the sum of the individual digit in 
+the number.
+
+
+def sumofdigits(num):
+    number=num
+    len=0
+    while(number>0):
+        number=number//10;
+        len=len+1;
+            
+    i=0;
+    j=0;
+    for x in range(len):
+        i=i+(num%10);
+        j=num//10;
+    print(i);
+
+num=int(input("enter a number"))
+sumofdigits(num);
+
+
