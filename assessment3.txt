@@ -1,0 +1,50 @@
+Q1)tuple1=('a','b','c','d','e','f');
+list1=list(tuple1);
+list1.pop(0);
+list1.reverse();
+list1.pop(0);
+list1.reverse();
+tuple1=tuple(list1);
+print(tuple1);
+
+
+Q2)list1=[5,20,15,20,25,50,20]
+list2=[]
+list3=[]
+for i in list1:
+    if(i%2==0):
+        list2.append(i);
+    else:
+        list3.append(i);
+
+
+Q3)list1=[5,20,15,20,25,50,20]  
+for i in list1:
+    if(i==20):
+        list1.remove(i);
+
+    
+
+Q4)list1=[a,b,c,d];
+list2=[1,2,3,4];
+i=len(list1);
+j=0;
+thisdict={}
+while j<i:
+    j+=1;
+    thisdict.update(list1[j]=list2[j])
+
+print(thisdict);
+
+
+Q5)x="This is the python session. This is the assesement3. This is the question num five"
+list1=x.split()
+print(list1)
+
+set1=set()
+for i in list1:
+    set1.add(i);
+    
+for i in set1:
+    print(i);
+    print(list1.count(i))
