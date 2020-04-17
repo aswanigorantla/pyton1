@@ -1,0 +1,34 @@
+Q1):create a file and insert a paragaraph and close
+
+f=open("demofile.txt","x")
+f.close()
+
+f=open("demofile.txt","w")
+f.write("this is aswani")
+f.close()
+
+Q2):read the first line of the file
+
+f=open("demofile.txt","r")
+print(f.readline());
+f.close()
+
+Q3):append data into the file created above
+
+f=open("demofile.txt","a")
+f.write("\n this is second line")
+f.write("\n this is third line")
+f.write("\n this is fourth line")
+f.write("\n this is fifth line")
+f.close()
+
+Q4):Fetch the file located at the desktop
+
+import os
+print(os.getcwd())
+
+Q5):Remove the file
+
+import os
+os.remove("demofile.txt");
+
